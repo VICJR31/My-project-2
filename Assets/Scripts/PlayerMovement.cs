@@ -6,8 +6,10 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
     public Rigidbody2D rb;
+    public Camera cam; 
 
-    private Vector2 moveDirection;
+    private Vector2 movement;
+    private Vector2 mousePos; 
 
     void Update() {
         // Processing Inputs
@@ -20,15 +22,25 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void ProcessInputs() {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition); 
 
-        moveDirection = new Vector2(moveX, moveY);  // TODO come back to this
+        // float moveX = Input.GetAxisRaw("Horizontal");
+        // float moveY = Input.GetAxisRaw("Vertical");
+
+        // movement = new Vector2(moveX, moveY);  // TODO come back to this
     }
 
     void Move() {
-        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        Vector2 lookDir = mousePos - rb.position;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f; 
+        rb.rotation = angle; 
+
+        //rb.velocity = new Vector2(movement.x * moveSpeed, movement.y * moveSpeed);
     }
+    
 //  [SerializeField] private float speed;
 //     private Rigidbody2D body;
  
