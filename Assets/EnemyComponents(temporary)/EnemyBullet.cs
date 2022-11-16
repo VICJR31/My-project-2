@@ -14,6 +14,7 @@ public class EnemyBullet : MonoBehaviour
     GameObject target; 
     public float speed; 
     Rigidbody2D bulletRB;
+    public int damage = 20; 
 
     // Start is called before the first frame update
     void Start() 
@@ -26,7 +27,10 @@ public class EnemyBullet : MonoBehaviour
     }
     void OnTriggerEnter2D (Collider2D hitInfo){
         Debug.Log(hitInfo.name); // prints out what the bullet collied with in console
+        Player player = hitInfo.GetComponent<Player>(); 
+        if(player != null){
+            player.TakeDamage(damage); 
+        }
         Destroy(this.gameObject); 
     }
-    
 }
