@@ -16,9 +16,14 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter2D (Collider2D hitInfo){
         Debug.Log(hitInfo.name); 
 
+        // Change "tempEnemy" to enemy profile name
         tempEnemy enemy = hitInfo.GetComponent<tempEnemy>(); 
         if(enemy != null){
             enemy.TakeDamage(damage); 
+        }
+        MGGunner mggunner = hitInfo.GetComponent<MGGunner>(); 
+        if(mggunner != null){
+            mggunner.TakeDamage(damage); 
         }
         Destroy(this.gameObject); 
     }
