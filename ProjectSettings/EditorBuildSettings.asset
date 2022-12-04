@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Ending.unity
     guid: a610a6065d32d4849bf6cfcea77a93cc
+  - enabled: 1
+    path: Assets/Levels/Credits.unity
+    guid: 2db9c188de102b84b82a31c9c2922a8c
   m_configObjects: {}
