@@ -14,5 +14,9 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quitting Game. Please Stand By...");
         Application.Quit();
     }
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
 
