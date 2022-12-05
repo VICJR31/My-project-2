@@ -174,7 +174,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is the first sentence!
+  m_Text: "\"The town the Boche holds is vital to \nbleeding all of France white...No
+    longer!\""
 --- !u!222 &680168402
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -200,7 +201,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 129, y: -109}
+  m_AnchoredPosition: {x: 78, y: -109}
   m_SizeDelta: {x: 479.1227, y: 94.6048}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &862344224
@@ -254,7 +255,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is the second sentence!
+  m_Text: '"Lutter! Pour la France!"
+
+    "Fight! For France!"'
 --- !u!222 &862344226
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -280,7 +283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 129, y: -109}
+  m_AnchoredPosition: {x: 79, y: -109}
   m_SizeDelta: {x: 479.1227, y: 94.6048}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1728006866
@@ -313,7 +316,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1728006868
 MonoBehaviour:
@@ -327,7 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 591e0fb389be1ff4c96d193534123a0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTime: 10
+  changeTime: 3
   sceneName: Level3
 --- !u!1 &1807652246
 GameObject:
@@ -358,7 +361,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1807652246}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 59ef6eacecab01e41b0e683f43da14a9, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: c791386da5da6f54a9253576187d0aeb, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -374,6 +377,18 @@ PlayableDirector:
     value: {fileID: 862344224}
   - key: {fileID: -4242328144448017036, guid: 59ef6eacecab01e41b0e683f43da14a9, type: 2}
     value: {fileID: 1728006866}
+  - key: {fileID: -7352567822936346509, guid: 59ef6eacecab01e41b0e683f43da14a9, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 2693771286306043357, guid: 59ef6eacecab01e41b0e683f43da14a9, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3706142125883634090, guid: 59ef6eacecab01e41b0e683f43da14a9, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4014670665963803417, guid: c791386da5da6f54a9253576187d0aeb, type: 2}
+    value: {fileID: 1728006866}
+  - key: {fileID: 4846703516608920283, guid: c791386da5da6f54a9253576187d0aeb, type: 2}
+    value: {fileID: 680168400}
+  - key: {fileID: -4415179165762599519, guid: c791386da5da6f54a9253576187d0aeb, type: 2}
+    value: {fileID: 862344224}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1807652248
@@ -542,4 +557,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1983292185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1983292188}
+  - component: {fileID: 1983292187}
+  - component: {fileID: 1983292186}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1983292186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983292185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1983292187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983292185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1983292188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983292185}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
