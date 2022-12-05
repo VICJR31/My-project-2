@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.6767, y: -43.1718}
-  m_SizeDelta: {x: 440.8387, y: 152.3231}
+  m_AnchoredPosition: {x: 28, y: -22.2581}
+  m_SizeDelta: {x: 563.09, y: 206.8392}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &398370167
 MonoBehaviour:
@@ -194,13 +194,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'After the capture of a supply depot critical to the Germans, the Entente
+  m_Text: "After the capture of a supply depot critical to the Germans, the Entente
     have a clear road into Belgium. With the efforts of the Blue Devils, and the
-    arriving Americans, the end of the war looked to be in sight.
-
-
-    Thanks for
-    playing! -Blue Team'
+    arriving Americans, the end of the war looked to be in sight.\n\nThanks for playing!
+    -Blue Team\n\n\n\nSong: \"Miguel Johnson - Good Day To Die [Epic]\" is under
+    a Creative Commons license (CC BY 3.0) \r\nhttps://www.youtube.com/c/MiguelJohnson
+    \r\nMusic promoted by BreakingCopyright: https://bit.ly/good-day-to-die-song"
 --- !u!222 &398370168
 CanvasRenderer:
   m_ObjectHideFlags: 0
